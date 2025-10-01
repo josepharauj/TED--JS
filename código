@@ -1,1 +1,29 @@
+const nomes = ["Ana", "Bruno", "Cíntia", "Pedro", "Eva"];
+console.log("Array de nomes inicial:", nomes);
+
+console.log("\n1. Terceiro nome (índice 2):", nomes[2]);
+
+
+nomes.push("Fábio"); 
+nomes.unshift("Gabriel"); 
+console.log("\n2. Array após adicionar nomes (início e fim):", nomes);
+
+
+const ultimoNomeRemovido = nomes.pop(); 
+console.log("\n3. Último nome removido:", ultimoNomeRemovido);
+console.log("Array após remover o último nome:", nomes);
+
+
+const numerosIniciais = [2, 4, 6, 8];
+const numerosDobrados = numerosIniciais.map(numero => numero * 2);
+
+console.log("\n4. Array inicial para map():", numerosIniciais);
+console.log("Array com valores dobrados (usando map()):", numerosDobrados);
+
+
+const numerosParaFiltrar = [1, 3, 5, 7, 9];
+const numerosMaioresQueCinco = numerosParaFiltrar.filter(numero => numero > 5);
+
+console.log("\n5. Array inicial para filter():", numerosParaFiltrar);
+console.log("Array com números maiores que 5 (usando filter()):", numerosMaioresQueCinco);
 
